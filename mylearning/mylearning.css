@@ -1,0 +1,274 @@
+:root {
+  --mainBlack: black;
+  --mainbink: #d630f1;
+  --mainwhite: white;
+  --mainMargin: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+  /*mantor nav-bar style*/
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .Nav_Bar{
+    border: 1px solid edbfff;
+    height: 60px;
+    width: 100%;
+    background-color: #e795ef7c;
+    position: absolute;
+    top: 0;
+    background-color: #edbfff83;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+}
+.menu.active ul {
+  display: flex;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-bottom: var(--mainMargin);
+}
+.main .logo {
+  display: flex;
+  align-items: center;
+}
+.main .logo img {
+  width: 110px;
+}
+.main .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.main .menu ul li a{
+  color: var(--mainBlack);
+}
+.login button{
+  background-color: #d730f196;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: none;
+  color: var(--mainwhite);
+  font-size: 15px; 
+}
+.login:hover button{
+    background-color: #d730f1c5;
+    transition: 0.5s;
+  }
+
+
+/*main page styling*/
+.courses {
+  max-width: 1200px;
+  margin: 90px;
+}
+
+.courses h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 200px;
+  width: 1000px;
+}
+
+.image img {
+  border-radius: 10px;
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.image1 img {
+  border-radius: 10px;
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.image2 img {
+  border-radius: 10px;
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.course-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  font-size: 14px;
+  color: #575757;
+}
+
+.course-info span {
+  font-size: 12px;
+  color: #dfdfdf;
+}
+
+.button {
+  background-color: #d772f9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #e3b3f3;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .courses {
+    margin: 70px auto;
+    max-width: 95%;
+  }
+  .course-card {
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .image img {
+    width: 180px;
+  }
+}
+
+/* Max width 992px */
+@media only screen and (max-width: 992px) {
+  .courses {
+    margin: 100px auto;
+    max-width: 90%;
+  }
+  .course-card {
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .image img {
+    width: 160px;
+  }
+  .course-info h2 {
+    font-size: 18px;
+  }
+  .course-info p {
+    font-size: 12px;
+  }
+}
+
+/* Max width 768px */
+@media only screen and (max-width: 768px) {
+  .Nav_Bar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .courses {
+    margin: 100px auto;
+    max-width: 100%;
+  }
+  .course-card {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .image img {
+    width: 140px;
+  }
+  .course-info h2 {
+    font-size: 16px;
+  }
+  .course-info p {
+    font-size: 11px;
+  }
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Max width 576px */
+@media only screen and (max-width: 676px ) and (max-width: 700px) and (max-width: 650px){
+  .Nav_Bar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .courses {
+    margin: 100px auto;
+    max-width: 100%;
+  }
+  .course-card {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+
+  }
+  .image img {
+    width: 120px;
+  }
+  .course-info h2 {
+    font-size: 14px;
+  }
+  .course-info p {
+    font-size: 10px;
+  }
+  .button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

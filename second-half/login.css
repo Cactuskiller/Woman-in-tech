@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #f0f0ff 50%, #f5faff 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f0f0ff;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.illustration {
+    width: 300px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f5faff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #d7c1f3;
+    border: none;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+    border-top-right-radius: 10px;
+}
+.tab a{
+    text-decoration: none;
+}
+
+.tabactive {
+    background-color: #b585e7;
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: #333;
+    border-top-left-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px; /* مساحة كافية للأيقونة على اليمين */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-with-icon i {
+    position: absolute;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.input-with-icon i.fa-user {
+    right: 10px; /* أيقونة الشخص على اليسار */
+}
+
+.password-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-with-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* مساحة كافية للأيقونة على اليمين */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-with-icon button.but {
+    position: absolute;
+    right: 10px; /* وضع الأيقونة على اليمين */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+    padding: 0;
+}
+
+.password-with-icon button.but i {
+    font-size: 18px; /* حجم الأيقونة */
+    color: #aaa;
+}
+
+.password-group {
+    margin-bottom: 15px;
+}
+
+.password-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.input-with-icon button i.fa-eye {
+    right: 10px; /* أيقونة العين على اليمين */
+}
+
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #b585e7;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-btn a{
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #9c5fd1;
+}
+

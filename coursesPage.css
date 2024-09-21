@@ -1,0 +1,1169 @@
+:root {
+  --mainPurple: #d630f1;
+  --mainBlack: black;
+  --mainBlue: blue;
+  --mainwhite: white;
+  --mainMargin: 60px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+  overflow-x: hidden;
+}
+
+/*mantor nav-bar style*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.Nav_Bar {
+  border: 1px solid edbfff;
+  height: 60px;
+  width: 100%;
+  background-color: #e795ef7c;
+  position: absolute;
+  top: 0;
+  background-color: #edbfff83;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.menu.active ul {
+  display: flex;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-bottom: var(--mainMargin);
+}
+.main .logo {
+  display: flex;
+  align-items: center;
+}
+.main .logo img {
+  width: 110px;
+}
+.main .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.main .menu ul li a {
+  color: var(--mainBlack);
+}
+.login button {
+  background-color: #d730f196;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: none;
+  color: var(--mainwhite);
+  font-size: 15px;
+}
+.login:hover button {
+  background-color: #d730f1c5;
+  transition: 0.5s;
+}
+
+/*main page css styling*/
+.title {
+  display: flex;
+  padding-left: 170px;
+}
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px 30px;
+}
+.main-container .video-container hr {
+  width: 1030px;
+}
+.video-container {
+  max-width: 1100px;
+}
+.video-container h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: var(--mainBlack);
+}
+.video-container .course-outline ul {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: left;
+  color: var(--mainBlack);
+  gap: 80px;
+  padding: 15px 10px;
+}
+.video-container .course-outline ul li a i {
+  color: var(--mainBlack);
+}
+.video-container .course-outline ul li a i:hover {
+  color: var(--mainPurple);
+  transition: 0.5s;
+}
+.video-container .course-outline ul li a:hover {
+  color: var(--mainPurple);
+  transition: 0.5s;
+}
+.course-video {
+  width: 1020px;
+}
+.video-container .course-rating ul {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 35px;
+}
+.video-container .course-rating .rating-category {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  gap: 42px;
+}
+.video-container .course-rating .rating-icons {
+  font-size: 20px;
+  font-weight: 700;
+}
+.video-container .course-overview {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  font-size: 15px;
+  padding-left: 13px;
+  padding-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.video-container .course-overview h3 {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.video-container .certification {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+.video-container .certification button {
+  background-color: var(--mainPurple);
+  color: aliceblue;
+  border: none;
+  font-size: 15px;
+  padding: 10px 25px;
+  margin-left: 20px;
+  margin-top: -10px;
+  border-radius: 40px;
+}
+.video-container .certification button:hover {
+  background-color: #f0f0f0;
+  color: var(--mainPurple);
+  transition: 0.5s;
+}
+
+/*trying another ocde for the sections */
+
+/* General section styling */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 25px 15px;
+  border: 1px solid #eeeeeea1;
+  text-align: left;
+  background: #eeeeeea1;
+  border-radius: 3px;
+  color: var(--mainBlack);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Ensures no extra space between sections */
+}
+
+/* Styling for individual section title */
+.section-title {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+/* Styling for section timing */
+.section-timing {
+  font-size: 10px;
+  padding-right: 16px;
+  color: #555;
+}
+
+.section-timing i {
+  color: var(--mainBlack);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Content within the section */
+.section-part {
+  overflow: hidden;
+  background-color: #fff;
+  max-width: 950px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: var(--mainBlack);
+  transition: max-height 0.2s ease-out;
+  max-height: 0px;
+  margin: 0 auto; /* Remove margin below each section-part */
+}
+
+/* List and labels inside the section part */
+.section-part ul li label {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for icons */
+.section-part ul li .time-icon {
+  display: flex;
+  justify-content: right;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-right: 10px;
+  color: var(--mainPurple);
+}
+
+/* Ensures no extra spacing in the sections container */
+.sections {
+  margin: -17px auto; /* Remove any margin */
+  padding: 5px auto; /* Remove padding */
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 0; /* Ensure no gap between sections */
+}
+
+.course-progress .actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-left: 60px;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--mainBlack);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.course-progress .actions button {
+  background-color: var(--mainPurple);
+  color: aliceblue;
+  border: none;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  margin-top: 5px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.course-progress .actions button {
+  color: aliceblue;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.course-progress .actions button:hover {
+  background-color: #eaeaea;
+  color: var(--mainPurple);
+  transition: 0.5s;
+}
+
+.course-progress .actions button a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.course-progress .actions button:hover a {
+  color: var(--mainPurple);
+  transition: 0.5s;
+}
+
+/* style foe course resourses*/
+.course-resourses {
+  max-width: 1000px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+
+.course-resourses h3 {
+  font-weight: bold;
+}
+
+.course-resourses p {
+  margin-bottom: 10px auto;
+  font-size: 15px;
+}
+
+.course-resourses label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.course-resourses a {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.course-resourses a:hover {
+  color: var(--mainPurple);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.search-content {
+  text-align: center; /* Centers text inside search-content */
+}
+
+.search-content h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.search-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #555;
+}
+
+/* style foe course reserch*/
+
+.course-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.my-input-container {
+  display: flex;
+  align-items: center;
+  width: 850px;
+  height: 40px;
+  padding: 0 auto; /* Adjust padding to avoid overflow */
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+}
+.my-input-container :placeholder-shown {
+  font-size: 15px; /* Adjust placeholder font size */
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.my-input-container > input {
+  flex-grow: 1; /* Let the input take most of the space */
+  border: none;
+  outline: none;
+}
+
+.my-input-container > img {
+  border: 1px solid #cfcece;
+  background-color: #cfcece;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* code for styling the review section */
+
+.comments-section {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rating-overview {
+  margin-bottom: 30px;
+}
+
+.rating-number {
+  display: flex;
+  align-items: center;
+}
+
+.rating-value {
+  font-size: 48px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.stars i {
+  color: #ffcc00;
+  margin-right: 5px;
+}
+
+.rating-count {
+  margin-left: 10px;
+  color: #777;
+}
+
+.rating-bars {
+  margin-top: 20px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 70%;
+  height: 10px;
+  background-color: #ddd;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar .filled {
+  height: 100%;
+  background-color: #ffcc00;
+}
+
+.percentage {
+  width: 10%;
+}
+
+.comment {
+  border-top: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-details h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.comment-date {
+  color: #888;
+  font-size: 12px;
+}
+
+.comment p {
+  margin: 0 0 10px;
+}
+
+.reply-link {
+  color: #ff6600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.reply-link:hover {
+  text-decoration: underline;
+}
+
+/* style for quiz page */
+
+.body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  margin: 30px auto;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0000001a;
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.quiz-header h1 {
+  color: var(--mainPurple);
+  font-size: 36px;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.quiz-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instructor-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.instructor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.instructor-details h4 {
+  margin-bottom: 5px;
+}
+
+.instructor-details p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.quiz-time {
+  color: var(--mainPurple);
+  font-weight: bold;
+}
+/* Bottom Section with form and image */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.quiz-form {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000000d;
+  margin-top: 40px;
+  flex-grow: 1;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.question label {
+  font-weight: bold;
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  color: var(--mainPurple);
+}
+
+.question select {
+  width: 80%;
+  margin: auto 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #edbfff6c;
+}
+
+.submit-button {
+  background-color: var(--mainPurple);
+  color: white;
+  margin-left: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #d730f1c5;
+}
+
+.quiz-image {
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.quiz-image img {
+  width: 200px;
+  height: auto;
+}
+
+/*notes page styling */
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.note-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 150px; /* Limit the height */
+  overflow-y: auto; /* Add a scrollbar if the content overflows */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Add custom styling to the scrollbar */
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .main .menu ul {
+    gap: 30px; /* Reduce gap for smaller screens */
+  }
+  .title {
+    padding-left: 100px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  .course-video,
+  .main-container .video-container hr {
+    width: 900px;
+  }
+
+  .video-container .course-outline ul {
+    gap: 50px;
+  }
+
+  .video-container .certification {
+    max-width: 900px;
+  }
+  .section-part {
+    max-width: 800px;
+  }
+
+  .course-progress .actions {
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .course-progress .actions button {
+    margin-left: 20px;
+  }
+  .course-resourses {
+    max-width: 850px;
+  }
+
+  .my-input-container {
+    width: 750px;
+  }
+  .comments-section {
+    max-width: 700px;
+  }
+
+  .quiz-container {
+    max-width: 750px;
+  }
+
+  .quiz-header h1 {
+    font-size: 32px;
+  }
+
+  .quiz-form {
+    padding: 20px;
+  }
+  .note-container {
+    max-width: 900px; /* Smaller container for screens below 1200px */
+  }
+
+  .dropdown {
+    width: 48%; /* Still 2 in a row, but adjusted for slightly smaller screens */
+  }
+}
+
+
+/* For screens smaller than 992px (e.g. tablets) */
+@media only screen and (max-width: 992px) {
+  /* body{
+    margin-right: 50%;
+    margin-left: 50%;
+  } */
+  .main {
+    margin: 10px auto;
+    max-width: 80% ;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .main .logo img {
+    width: 90px; /* Adjust logo size */
+  }
+
+  .main .menu ul {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .login button {
+    width: 100%; /* Full-width button for mobile/tablet */
+  }
+  .title {
+    padding-left: 50px;
+  }
+
+  .main-container {
+    margin: 100px 15px;
+  }
+
+  .course-video,
+  .main-container .video-container hr {
+    width: 700px;
+  }
+
+  .video-container h1 {
+    font-size: 22px;
+  }
+
+  .video-container .course-outline ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .video-container .course-rating ul,
+  .video-container .course-rating .rating-category {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .video-container .course-overview,
+  .video-container .certification {
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+  }
+
+  .video-container .certification button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 30%;
+  }
+  .section-part {
+    max-width: 700px;
+  }
+
+  .section-part ul li label {
+    font-size: 11px;
+  }
+
+  .section-part ul li .time-icon {
+    font-size: 9px;
+    padding-left: 20px;
+  }
+
+  .course-progress .actions {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .course-progress .actions button {
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-left: 10px;
+  }
+  .course-resourses {
+    max-width: 700px;
+    font-size: 14px;
+  }
+
+  .course-resourses a {
+    font-size: 13px;
+  }
+
+  .search-content h3 {
+    font-size: 16px;
+  }
+
+  .my-input-container {
+    width: 600px;
+    height: 35px;
+  }
+
+  .my-input-container :placeholder-shown {
+    font-size: 13px;
+  }
+
+  .my-input-container > img {
+    width: 35px;
+    height: 35px;
+  }
+  .comments-section {
+    max-width: 600px;
+  }
+
+  .rating-value {
+    font-size: 40px;
+  }
+
+  .quiz-container {
+    max-width: 600px;
+  }
+
+  .quiz-header h1 {
+    font-size: 28px;
+  }
+
+  .quiz-form {
+    padding: 15px;
+  }
+
+  .instructor-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .submit-button {
+    margin-left: 30px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .note-container {
+    max-width: 750px; /* Smaller container for screens below 992px */
+  }
+
+  .dropdown {
+    width: 48%; /* Still 2 in a row, but container becomes narrower */
+  }
+}
+
+/* For screens smaller than 768px (e.g. small tablets, large phones) */
+@media (max-width: 768px) and (max-width: 650px) {
+  .Nav_Bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .main {
+    max-width: 100%;
+    padding: 5px 0;
+  }
+
+  .main .logo img {
+    width: 80px;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+
+  .main .menu ul {
+    margin-top: 45px;
+    gap: 15px;
+  }
+
+  .login button {
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 8px 8px;
+  }
+  .title {
+    padding-left: 20px;
+  }
+
+  /*the upper code is not working proparly*/
+
+  .main-container {
+    margin: 20px 10px;
+    margin-top: 70px;
+  }
+
+  .course-video,
+  .main-container .video-container hr {
+    width: 100%;
+  }
+
+  .video-container h1 {
+    font-size: 18px;
+  }
+
+  .video-container .course-outline ul {
+    gap: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .video-container .course-rating ul,
+  .video-container .course-rating .rating-category {
+    gap: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .video-container .course-overview,
+  .video-container .certification {
+    max-width: 80%;
+    padding: 0;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container .certification button {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 30%;
+  }
+  .section-part {
+    max-width: 100%;
+  }
+
+  .section-part ul li label {
+    font-size: 10px;
+  }
+
+  .section-part ul li .time-icon {
+    font-size: 8px;
+    padding-left: 10px;
+  }
+
+  .sections {
+    gap: 10px;
+  }
+
+  .course-progress .actions {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 130px;
+  }
+
+  .course-progress .actions button {
+    font-size: 13px;
+    padding: 8px auto;
+    margin-left: 0;
+    width: 100%;
+  }
+  .course-resourses {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  .course-resourses a {
+    font-size: 12px;
+  }
+
+  .search-content h3 {
+    font-size: 14px;
+  }
+
+  .my-input-container {
+    width: 100%;
+    height: 30px;
+  }
+
+  .my-input-container :placeholder-shown {
+    font-size: 12px;
+  }
+
+  .my-input-container > img {
+    width: 30px;
+    height: 30px;
+  }
+  .comments-section {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .rating-value {
+    font-size: 32px;
+  }
+
+  .bar {
+    width: 60%;
+  }
+
+  .quiz-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .quiz-header h1 {
+    font-size: 24px;
+  }
+
+  .quiz-form {
+    padding: 10px;
+  }
+
+  .question select {
+    width: 100%;
+    margin: auto;
+  }
+
+  .submit-button {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .quiz-image {
+    margin-left: 10px;
+  }
+
+  .quiz-image img {
+    width: 150px;
+  }
+  .note-input {
+    font-size: 14px; /* Smaller text on small screens */
+    padding: 8px;
+  }
+
+  .dropbtn {
+    font-size: 14px; /* Adjust button text size */
+    padding: 8px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 12px; /* Adjust dropdown items padding */
+  }
+}
