@@ -35,3 +35,8 @@ for (i = 0; i < buttons.length; i++) {
 
  // Initial call to set progress (in case any are pre-checked)
  updateProgress();
+
+ document.getElementById("download-button").addEventListener("click", function() {
+  // Trigger a click on the hidden download link
+  document.getElementById("download-link").click();
+});

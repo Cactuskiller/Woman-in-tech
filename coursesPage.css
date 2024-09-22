@@ -18,7 +18,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  padding-right: 30px;
+  /* padding-right: 30px; */
   overflow-x: hidden;
 }
 
@@ -48,12 +48,16 @@ body {
   padding: 10px 0px;
   margin-bottom: var(--mainMargin);
 }
+.main .logo img {
+  width: 90px; 
+}
 .main .logo {
   display: flex;
   align-items: center;
 }
 .main .logo img {
   width: 110px;
+  margin-top:7px;
 }
 .main .menu ul {
   display: flex;
@@ -85,7 +89,7 @@ body {
 .main-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 80px 30px;
+  margin: 80px auto;
 }
 .main-container .video-container hr {
   width: 1030px;
@@ -742,12 +746,20 @@ h2 {
 }
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: 100%;
+    max-width: 80%;
     padding: 0 20px;
   }
 
   .main .menu ul {
     gap: 30px; /* Reduce gap for smaller screens */
+  }
+  .login button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main .logo img {
+    width: 90px; 
+    margin-top:-10px;
   }
   .title {
     padding-left: 100px;
@@ -756,7 +768,7 @@ h2 {
   .main-container {
     flex-direction: column;
     align-items: center;
-    margin: 60px 20px;
+    margin: 60px auto;
   }
 
   .course-video,
@@ -817,13 +829,9 @@ h2 {
 
 /* For screens smaller than 992px (e.g. tablets) */
 @media only screen and (max-width: 992px) {
-  /* body{
-    margin-right: 50%;
-    margin-left: 50%;
-  } */
   .main {
-    margin: 10px auto;
-    max-width: 80% ;
+    margin: 20px auto;
+    max-width: 90%;
     flex-direction: row;
     align-items: start;
   }
@@ -839,14 +847,18 @@ h2 {
   }
 
   .login button {
-    width: 100%; /* Full-width button for mobile/tablet */
+    width: 100%;
+    margin-top: -10px;
+  
   }
   .title {
     padding-left: 50px;
   }
 
   .main-container {
-    margin: 100px 15px;
+    margin: 60px auto;
+    margin-top: 70px;
+    
   }
 
   .course-video,
@@ -985,17 +997,17 @@ h2 {
 
   .main .logo img {
     width: 80px;
-    margin-top: 40px;
+    margin-top: 15px;
     margin-right: 50px;
   }
 
   .main .menu ul {
-    margin-top: 45px;
+    margin-top: 20px;
     gap: 15px;
   }
 
   .login button {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 30px;
     padding: 8px 8px;
   }
@@ -1006,7 +1018,7 @@ h2 {
   /*the upper code is not working proparly*/
 
   .main-container {
-    margin: 20px 10px;
+    margin: 20px auto;
     margin-top: 70px;
   }
 

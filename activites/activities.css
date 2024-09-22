@@ -141,10 +141,9 @@ button:hover {
 }
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: 60%;
-    padding: 0 20px;
-    margin-top: 15px;
-}
+    max-width: 80%;
+    margin: 0 auto;
+  }
 .Nav_Bar {
   display: flex;
   flex-direction: row;
@@ -154,7 +153,7 @@ button:hover {
 }
 
 .login button{
-  margin-top: 0px;
+  margin-top: 17px;
 }
 .main .menu ul {
     gap: 30px; /* Reduce gap for smaller screens */
@@ -184,10 +183,14 @@ button:hover {
 /* Max width 992px */
 @media only screen and (max-width: 992px) {
   .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  /* .container {
     max-width: 60%;
     padding: 0 20px;
     margin-top: 15px;
-}
+} */
 .Nav_Bar {
   display: flex;
   flex-direction: row;
@@ -197,8 +200,7 @@ button:hover {
 }
 
 .login button{
-  margin-top: 0px;
-  
+  margin-top: 13px;
 }
   .main {
     flex-direction: row;
@@ -210,10 +212,16 @@ button:hover {
 }
 
 .main .menu ul {
+  margin-top: 17px;
     flex-direction: row;
     gap: 20px;
     align-items: center;
 }
+/*put the code here*/
+.main .logo img {
+  margin-top: 10px;
+}
+
 
 .login button {
     width: 100%; /* Full-width button for mobile/tablet */
@@ -242,10 +250,14 @@ button:hover {
 /* Max width 768px */
 @media only screen and (max-width: 768px) {
   .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  /* .container {
     max-width: 60%;
     padding: 0 20px;
     margin-top: 10px;
-}
+} */
 .login button{
   margin-top: 0;
   
@@ -261,7 +273,6 @@ button:hover {
 .main {
     padding: 5px 0;
 }
-
 .main .logo img {
     width: 80px;
     margin-top: 40px;
@@ -292,5 +303,30 @@ button:hover {
 
   button {
     font-size: 14px; /* Adjust button size */
+  }
+}
+@media only screen and (max-width: 676px ) and (max-width: 700px) and (max-width: 650px) and (max-width: 400px){
+  .container {
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  .login button{
+    margin-top: 10px;
+  }
+  .main .logo img {
+    margin-top: 17px;
+  }
+  .main .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  
+  }
+  
+  .Nav_Bar {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    /* margin-bottom: 30px; */
   }
 }

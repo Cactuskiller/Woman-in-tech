@@ -170,6 +170,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .courses {
     margin: 70px auto;
     max-width: 95%;
@@ -187,6 +191,10 @@ button:hover {
 
 /* Max width 992px */
 @media only screen and (max-width: 992px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .courses {
     margin: 100px auto;
     max-width: 90%;
@@ -210,10 +218,14 @@ button:hover {
 
 /* Max width 768px */
 @media only screen and (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .Nav_Bar {
     display: flex;
-    flex-direction: column;
-    height: auto;
+    flex-direction: row;
+    /* height: auto; */
   }
   .courses {
     margin: 100px auto;
@@ -242,11 +254,15 @@ button:hover {
 
 /* Max width 576px */
 @media only screen and (max-width: 676px ) and (max-width: 700px) and (max-width: 650px){
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .Nav_Bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   .courses {
     margin: 100px auto;
