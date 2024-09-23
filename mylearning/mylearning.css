@@ -21,21 +21,21 @@ body {
   justify-content: center;
 }
 
-  /*mantor nav-bar style*/
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .Nav_Bar{
-    border: 1px solid edbfff;
-    height: 60px;
-    width: 100%;
-    background-color: #e795ef7c;
-    position: absolute;
-    top: 0;
-    background-color: #edbfff83;
-    border-bottom-left-radius: 30px ;
-    border-bottom-right-radius: 30px ;
+/*mantor nav-bar style*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.Nav_Bar {
+  border: 1px solid edbfff;
+  height: 60px;
+  width: 100%;
+  background-color: #e795ef7c;
+  position: absolute;
+  top: 0;
+  background-color: #edbfff83;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .menu.active ul {
   display: flex;
@@ -59,23 +59,22 @@ body {
   align-items: center;
   gap: 50px;
 }
-.main .menu ul li a{
+.main .menu ul li a {
   color: var(--mainBlack);
 }
-.login button{
+.login button {
   background-color: #d730f196;
   color: white;
   padding: 7px 20px;
   border-radius: 20px;
   border: none;
   color: var(--mainwhite);
-  font-size: 15px; 
+  font-size: 15px;
 }
-.login:hover button{
-    background-color: #d730f1c5;
-    transition: 0.5s;
-  }
-
+.login:hover button {
+  background-color: #d730f1c5;
+  transition: 0.5s;
+}
 
 /*main page styling*/
 .courses {
@@ -189,7 +188,6 @@ button:hover {
   }
 }
 
-/* Max width 992px */
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 80%;
@@ -216,7 +214,6 @@ button:hover {
   }
 }
 
-/* Max width 768px */
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 80%;
@@ -225,7 +222,6 @@ button:hover {
   .Nav_Bar {
     display: flex;
     flex-direction: row;
-    /* height: auto; */
   }
   .courses {
     margin: 100px auto;
@@ -252,8 +248,7 @@ button:hover {
   }
 }
 
-/* Max width 576px */
-@media only screen and (max-width: 676px ) and (max-width: 700px) and (max-width: 650px){
+@media only screen and (max-width: 676px) and (max-width: 700px) and (max-width: 650px) {
   .container {
     max-width: 80%;
     margin: 0 auto;
@@ -262,7 +257,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     height: auto;
-    /* margin-bottom: 30px; */
   }
   .courses {
     margin: 100px auto;
@@ -272,7 +266,6 @@ button:hover {
     width: 100%;
     flex-direction: column;
     height: auto;
-
   }
   .image img {
     width: 120px;

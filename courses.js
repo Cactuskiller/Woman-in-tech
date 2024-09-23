@@ -2,7 +2,7 @@ var buttons = document.getElementsByClassName("section");
 var i;
 
 for (i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function() {
+  buttons[i].addEventListener("click", function () {
     var nextEl = this.nextElementSibling; // The section-part after the button
     if (nextEl.style.maxHeight) {
       nextEl.style.maxHeight = null; // Collapse the section
@@ -12,31 +12,28 @@ for (i = 0; i < buttons.length; i++) {
   });
 }
 
- // Total number of lessons (in this case, 20)
- const totalLessons = 20;
+const totalLessons = 20;
 
- // Get all checkboxes and the progress text element
- const checkboxes = document.querySelectorAll('.progress-checkbox');
- const progressText = document.getElementById('progress-text');
+const checkboxes = document.querySelectorAll(".progress-checkbox");
+const progressText = document.getElementById("progress-text");
 
- // Function to update progress
- function updateProgress() {
-   // Count the number of checked checkboxes
-   const completedLessons = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
-   
-   // Update the text content of the h3 element
-   progressText.innerHTML = `<i class="fa-solid fa-crown"></i> &nbsp;Your progress: ${completedLessons} out of ${totalLessons} completed`;
- }
+function updateProgress() {
+  const completedLessons = Array.from(checkboxes).filter(
+    (checkbox) => checkbox.checked
+  ).length;
 
- // Add event listener to all checkboxes
- checkboxes.forEach(checkbox => {
-   checkbox.addEventListener('change', updateProgress);
- });
+  progressText.innerHTML = `<i class="fa-solid fa-crown"></i> &nbsp;Your progress: ${completedLessons} out of ${totalLessons} completed`;
+}
 
- // Initial call to set progress (in case any are pre-checked)
- updateProgress();
-
- document.getElementById("download-button").addEventListener("click", function() {
-  // Trigger a click on the hidden download link
-  document.getElementById("download-link").click();
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", updateProgress);
 });
+
+updateProgress();
+
+document
+  .getElementById("download-button")
+  .addEventListener("click", function () {
+    // Trigger a click on the hidden download link
+    document.getElementById("download-link").click();
+  });

@@ -1,27 +1,26 @@
 :root {
-    --mainBlack: black;
-    --mainbink: #D630F1;
-    --mainwhite: white;
-    --mainMargin: 40px;
-  }
+  --mainBlack: black;
+  --mainbink: #d630f1;
+  --mainwhite: white;
+  --mainMargin: 40px;
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
   background-color: #f5f5f5;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 /* Nav Bar  */
 .Nav_Bar {
@@ -35,26 +34,26 @@ body{
   border-bottom-right-radius: 30px;
   color: white;
   transition: top 0.3s; /* إضافة تأثير الانتقال عند تغيير موضع الـ nav */
-  transition: background-color 0.3s linear, color 0.3s ease;; 
+  transition: background-color 0.3s linear, color 0.3s ease;
 }
 
 .Nav_Bar:hover {
   top: 0;
 }
- .Nav_Bar.hidden {
-  top: -100px; 
-} 
+.Nav_Bar.hidden {
+  top: -100px;
+}
 
 .Nav_Bar.scrolled {
   background-color: #d730f13f; /* اللون الجديد عند الصفحة الثانية */
-   color: #000;
+  color: #000;
 }
 .Nav_Bar.scrolled .menu ul li a {
   color: black;
 }
 
 /* عند التمرير وتغيير الخلفية، اجعل لون الأزرار أيضًا يتغير */
-.Nav_Bar.scrolled .profile button a{
+.Nav_Bar.scrolled .profile button a {
   color: black; /* لون النص للأزرار */
 }
 
@@ -62,62 +61,60 @@ body{
   text-decoration: underline;
 }
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px;
-    margin-bottom: var(--mainMargin);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-bottom: var(--mainMargin);
+}
 .main .logo {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+}
 .main .logo img {
-    width: 110px;
-  }
+  width: 110px;
+}
 .main .menu ul {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-.main .menu ul li a{
-    color: var(--mainwhite);
-
-  }
-.profile button a{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.main .menu ul li a {
+  color: var(--mainwhite);
+}
+.profile button a {
   color: white;
 }
 .profile button {
-    background-color: #d730f196;
-    padding: 7px 20px;
-    border-radius: 20px;
-    border: none;
-    color: var(--mainwhite);
-  }
+  background-color: #d730f196;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: none;
+  color: var(--mainwhite);
+}
 .profile:hover button {
-    background-color:  #d730f1c5;
-  }
-  
+  background-color: #d730f1c5;
+}
 
-  /* home1 */
-.image-main  .content {
-    position: relative;
-    height: 400px; /* يمكنك تعديل هذا حسب المساحة المطلوبة */
-    width: 100%;
+/* home1 */
+.image-main .content {
+  position: relative;
+  height: 400px; /* يمكنك تعديل هذا حسب المساحة المطلوبة */
+  width: 100%;
 }
 .ball {
-    position: absolute;
-    font-size: 2rem;
-    padding: 5px 10px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    text-align: center;
-    opacity: 0;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
-    transition: transform 0.5s ease;
-    will-change: transform;
-    animation: fadeInOut 8s infinite ease-in-out;
+  position: absolute;
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  transition: transform 0.5s ease;
+  will-change: transform;
+  animation: fadeInOut 8s infinite ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -143,7 +140,7 @@ body{
 
 /* تخصيص الحركة لكل كرة */
 #Meet {
-  animation: moveIn 1s forwards, fadeIn 2s forwards ;
+  animation: moveIn 1s forwards, fadeIn 2s forwards;
   animation-delay: 0s, 0s; /* الظهور فوراً */
   animation-fill-mode: forwards;
 }
@@ -172,64 +169,61 @@ body{
   animation-fill-mode: forwards;
 }
 
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .image-main .wlogo {
-    display: flex;
-    height: 400;
-    justify-content: start;
-  }
+  display: flex;
+  height: 400;
+  justify-content: start;
+}
 .image-main .container .wlogo img {
-    width: 200px;
-  }
-.image-main{
-    background: url(./image/9.jpeg);
-    width: 100%;
-    height: 480px;
-    background-position: center;
-    background-size: cover;
-
-  }
+  width: 200px;
+}
+.image-main {
+  background: url(./image/9.jpeg);
+  width: 100%;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+}
 .image-main .container {
   display: flex;
   flex-direction: column; /* يجعل المحتويات تتجه عموديًا */
   align-items: start; /* محاذاة المحتويات من البداية */
 }
 .image-main .content h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    color: var(--mainwhite);
-    font-size: 35px;
-      font-family:  sans-serif; /* استخدم نفس الخط هنا */
-      text-transform: uppercase; /* لتوحيد جميع الأحرف */
-      font-weight: bold; /* نفس سمك الخط */
-      text-shadow: 10px 10px 10px rgba(12, 12, 12, 0.9); /* نفس الظل */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: var(--mainwhite);
+  font-size: 35px;
+  font-family: sans-serif; /* استخدم نفس الخط هنا */
+  text-transform: uppercase; /* لتوحيد جميع الأحرف */
+  font-weight: bold; /* نفس سمك الخط */
+  text-shadow: 10px 10px 10px rgba(12, 12, 12, 0.9); /* نفس الظل */
+}
 .image-main .content {
-    margin-bottom:-27px; /* مسافة بين .content و .wlogo */
-    margin-left: 12px;
-  }
+  margin-bottom: -27px; /* مسافة بين .content و .wlogo */
+  margin-left: 12px;
+}
 
-  
-  /* home2 */
+/* home2 */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .about-us {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 .containerabout {
   background-color: white;
@@ -240,7 +234,6 @@ body{
   display: flex;
   flex-direction: column;
   height: 425px;
-
 }
 .about-header {
   position: relative;
@@ -261,10 +254,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  
+  height: 100vh;
 }
 .about-text {
-
   flex: 1;
   padding-right: 20px;
   padding-top: 10px;
@@ -320,7 +312,7 @@ body{
 }
 h3 {
   font-size: 24px;
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .cards-container {
   display: flex;
@@ -350,10 +342,10 @@ h3 {
   margin-right: 10px;
   transition: transform 0.3s ease; /* إضافة تأثير الحركة للكروت */
 }
-.card-image  {
+.card-image {
   width: 100%;
   height: auto;
-  position: relative; 
+  position: relative;
 }
 .card-image img {
   border-radius: 10px;
@@ -411,7 +403,8 @@ h3 {
 .see-more:hover {
   background-color: #b025c1;
 }
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   position: absolute;
   top: 50%; /* لوضع السهم في المنتصف عمودياً */
   transform: translateY(-50%);
@@ -433,13 +426,13 @@ h3 {
 }
 .modal {
   display: none; /* يتم إظهاره عند الحاجة */
-  position: fixed; 
-  z-index: 1000; 
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0,0,0,0.5); /* خلفية نصف شفافة */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية نصف شفافة */
   overflow: auto; /* للتمرير إذا كان المحتوى طويل */
 }
 .modal-content {
@@ -454,22 +447,22 @@ h3 {
 .modal-content img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0; 
+  border-radius: 10px 10px 0 0;
   display: block;
 }
 .modal-body {
   padding: 20px;
   text-align: center;
 }
-.modal-details .dtel{
+.modal-details .dtel {
   margin-top: 10px;
   color: rgb(78, 78, 78);
 }
-.modal-details .modal-duration{
+.modal-details .modal-duration {
   margin-left: 25px;
   color: #b025c1;
 }
-.modal-details .modal-students{
+.modal-details .modal-students {
   margin-left: 25px;
   color: #b025c1;
 }
@@ -486,8 +479,6 @@ h3 {
 .close:focus {
   color: black;
 }
-
-
 
 /* home 5 */
 .container5 {
@@ -636,12 +627,9 @@ h3 {
   text-align: right;
 }
 
-
-
-
 /* footer */
 .footer {
-  background-color:  #bc12d693;
+  background-color: #bc12d693;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   padding: 5px;

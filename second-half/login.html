@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" href="https://www.iq.zain.com/themes/responsiv-clean/assets/images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="icon"
+      href="https://www.iq.zain.com/themes/responsiv-clean/assets/images/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="left-section">
-            <img src="./image/logo.svg" alt="Women in Tech Logo" class="logo">
-            <img src="./image/login.png" alt="Illustration" class="illustration">
-        </div>
-        <div class="right-section">
-            <div class="form-container">
-                <div class="tabs">
-                    <button class="tabactive">Login</button>
-                    <button class="tab"><a href="./signup.html">Sign up</a></button>
-                </div>
-                <br>
-                <form class="login-form">
-                    <div class="input-group">
-                        <div class="input-with-icon">
-                           <i class="fa-solid fa-user"></i>
-                           <input placeholder="Email*" type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="password-group">
-                        <div class="password-with-icon">
-                           <button class="but" id="togglePassword"><i class="fa-solid fa-eye" id="toggleIcon"></i></button>
-                           <input placeholder="Password*" type="password" id="password" name="password" required>
-                        </div>
-                    </div>
-
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Remember me</label>
-                    </div>
-                    <button  class="login-btn"><a href="./Home.html">Login</a></button>
-                </form>
+      <div class="left-section">
+        <img src="./image/logo.svg" alt="Women in Tech Logo" class="logo" />
+        <img src="./image/login.png" alt="Illustration" class="illustration" />
+      </div>
+      <div class="right-section">
+        <div class="form-container">
+          <div class="tabs">
+            <button class="tabactive">Login</button>
+            <button class="tab"><a href="./signup.html">Sign up</a></button>
+          </div>
+          <br />
+          <form class="login-form">
+            <div class="input-group">
+              <div class="input-with-icon">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  placeholder="Email*"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
             </div>
+            <br />
+            <div class="password-group">
+              <div class="password-with-icon">
+                <button class="but" id="togglePassword">
+                  <i class="fa-solid fa-eye" id="toggleIcon"></i>
+                </button>
+                <input
+                  placeholder="Password*"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="remember-me">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <button class="login-btn"><a href="./Home.html">Login</a></button>
+          </form>
         </div>
+      </div>
     </div>
     <script src="./login.js"></script>
-</body>
+  </body>
 </html>

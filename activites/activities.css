@@ -36,7 +36,6 @@ body {
   background-color: #edbfff83;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  
 }
 .menu.active ul {
   display: flex;
@@ -144,39 +143,38 @@ button:hover {
     max-width: 80%;
     margin: 0 auto;
   }
-.Nav_Bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
+  .Nav_Bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
-.login button{
-  margin-top: 17px;
-}
-.main .menu ul {
-    gap: 30px; /* Reduce gap for smaller screens */
-    
-}
+  .login button {
+    margin-top: 17px;
+  }
+  .main .menu ul {
+    gap: 30px;
+  }
 
-.cards-list{
-  margin-top: 40px;
-}
+  .cards-list {
+    margin-top: 40px;
+  }
   .card {
-    margin-right: 50px; /* Adjust card margin */
-    width: 220px; /* Adjust card width */
-    height: 220px; /* Adjust card height */
+    margin-right: 50px;
+    width: 220px;
+    height: 220px;
   }
 
   .image5 {
-    margin-right: 25px; /* Adjust image margin */
-    width: 220px; /* Adjust image size */
+    margin-right: 25px;
+    width: 220px;
     height: 220px;
   }
 
   button {
-    font-size: 18px; /* Adjust button size */
+    font-size: 18px;
   }
 }
 
@@ -186,131 +184,118 @@ button:hover {
     max-width: 80%;
     margin: 0 auto;
   }
-  /* .container {
-    max-width: 60%;
-    padding: 0 20px;
-    margin-top: 15px;
-} */
-.Nav_Bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
 
-.login button{
-  margin-top: 13px;
-}
-  .main {
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.main .logo img {
-    width: 90px; /* Adjust logo size */
-}
-
-.main .menu ul {
-  margin-top: 17px;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-}
-/*put the code here*/
-.main .logo img {
-  margin-top: 10px;
-}
-
-
-.login button {
-    width: 100%; /* Full-width button for mobile/tablet */
-}
-
-  .cards-list {
-    justify-content: center; /* Center the cards */
-  }
-
-  .card {
-    margin: 50px auto;
-    width: 200px; /* Adjust card width */
-    height: 200px; /* Adjust card height */
-  }
-
-  .image5 {
-    width: 200px; /* Adjust image size */
-    height: 200px;
-  }
-
-  button {
-    font-size: 16px; /* Adjust button size */
-  }
-}
-
-/* Max width 768px */
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  /* .container {
-    max-width: 60%;
-    padding: 0 20px;
-    margin-top: 10px;
-} */
-.login button{
-  margin-top: 0;
-  
-}
   .Nav_Bar {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+  .login button {
+    margin-top: 13px;
+  }
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .main .logo img {
+    width: 90px;
+  }
+
+  .main .menu ul {
+    margin-top: 17px;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .main .logo img {
+    margin-top: 10px;
+  }
+
+  .login button {
+    width: 100%;
+  }
+
+  .cards-list {
+    justify-content: center;
+  }
+
+  .card {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .image5 {
+    width: 200px;
+    height: 200px;
+  }
+
+  button {
+    font-size: 16px;
+  }
 }
 
-.main {
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .login button {
+    margin-top: 0;
+  }
+  .Nav_Bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .main {
     padding: 5px 0;
-}
-.main .logo img {
+  }
+  .main .logo img {
     width: 80px;
     margin-top: 40px;
     margin-right: 50px;
-}
+  }
 
-.main .menu ul {
-  margin-top: 45px;
+  .main .menu ul {
+    margin-top: 45px;
     gap: 15px;
-}
+  }
 
-.login button {
-  margin-top: 40px;
-  margin-left: 30px;
-  padding: 8px 8px;
-   
-}
+  .login button {
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 8px 8px;
+  }
 
   .card {
-    width: 180px; /* Adjust card size */
+    width: 180px;
     height: 180px;
   }
 
   .image5 {
-    width: 180px; /* Adjust image size */
+    width: 180px;
     height: 180px;
   }
 
   button {
-    font-size: 14px; /* Adjust button size */
+    font-size: 14px;
   }
 }
-@media only screen and (max-width: 676px ) and (max-width: 700px) and (max-width: 650px) and (max-width: 400px){
+@media only screen and (max-width: 676px) and (max-width: 700px) and (max-width: 650px) and (max-width: 400px) {
   .container {
     max-width: 40%;
     margin: 0 auto;
   }
-  .login button{
+  .login button {
     margin-top: 10px;
   }
   .main .logo img {
@@ -320,13 +305,11 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 50px;
-  
   }
-  
+
   .Nav_Bar {
     display: flex;
     flex-direction: row;
     height: auto;
-    /* margin-bottom: 30px; */
   }
 }

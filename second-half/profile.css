@@ -35,7 +35,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
-  /* margin-bottom: var(--mainMargin); */
 }
 .main .logo {
   display: flex;
@@ -52,6 +51,7 @@ body {
 .main .menu ul li a {
   color: var(--mainBlack);
 }
+
 .login button {
   background-color: #d730f196;
   color: white;
@@ -59,14 +59,12 @@ body {
   border-radius: 20px;
   border: none;
   color: var(--mainwhite);
+  font-size: 15px;
 }
-.login:hover button{
-    background-color:  #d730f1c5;
-    transition: 0.5s;
-  }
-
-
-
+.login:hover button {
+  background-color: #d730f1c5;
+  transition: 0.5s;
+}
 
 .profile {
   margin: 70px;
@@ -76,7 +74,7 @@ body {
   padding: 30px;
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(to left, #e1abff, #BFD4F3);
+  background: linear-gradient(to left, #e1abff, #bfd4f3);
   border-radius: 10px;
   text-align: center;
 }
@@ -87,7 +85,7 @@ body {
   justify-content: flex-start;
 }
 
- .img img {
+.img img {
   width: 70px;
   display: block;
   max-width: 100px;
@@ -112,7 +110,7 @@ body {
 #profile-form {
   display: flex;
   flex-direction: column;
-  padding:30px 40px;
+  padding: 30px 40px;
   gap: 10px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -146,7 +144,7 @@ input {
 
 .save-button {
   width: 10%;
-  background-color:#d730f196;
+  background-color: #d730f196;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -154,7 +152,7 @@ input {
   cursor: pointer;
 }
 .save-button:hover {
- background-color:  #d730f1c5;
+  background-color: #d730f1c5;
   color: var(--mainwhite);
   transition: 0.5s;
 }
