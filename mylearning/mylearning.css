@@ -54,6 +54,7 @@ body {
 .main .logo img {
   width: 110px;
 }
+
 .main .menu ul {
   display: flex;
   align-items: center;
@@ -75,6 +76,7 @@ body {
   background-color: #d730f1c5;
   transition: 0.5s;
 }
+
 
 /*main page styling*/
 .courses {
@@ -281,3 +283,4 @@ button:hover {
     font-size: 12px;
   }
 }
+

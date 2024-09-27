@@ -14,7 +14,7 @@ body {
   padding: 5px;
 }
 
-.container {
+/* .container {
   text-align: center;
   background-color: white;
   padding: 35px;
@@ -23,52 +23,90 @@ body {
   max-width: 80vw;
   margin-top: 40px;
   position: relative;
+} */
+ 
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 50px; /* زيادة المساحة الداخلية */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90vw; /* زيادة العرض الأقصى للعنصر */
+  margin-top: 40px;
+  position: relative;
 }
 
-.congrats-text {
+/* .congrats-text {
   font-size: 2rem;
   font-weight: bold;
   color: #a25ddc;
   margin-bottom: 20px;
 }
+ */
 
-.certificate img {
+ .congrats-text {
+  font-size: 2.5rem; /* زيادة حجم النص */
+  font-weight: bold;
+  color: #a25ddc;
+  margin-bottom: 30px; /* زيادة المسافة أسفل النص */
+}
+
+/* .certificate img {
   width: 100%;
   max-width: 350px;
+  height: auto;
+  margin-top: 40px;
+}
+ */
+ .certificate img {
+  width: 100%;
+  max-width: 400px; /* زيادة الحد الأقصى للعرض */
   height: auto;
   margin-top: 40px;
 }
 
 .graduation-girl {
   margin-top: 20px;
+  float: right; /* يجعل العنصر ينحرف إلى اليمين */
+  margin-left: 20px; /* لإضافة بعض المساحة على اليسار */
 }
 
 .graduation-girl img {
   width: 100%;
-  max-width: 250px;
+  max-width: 300px; /* زيادة الحد الأقصى للعرض */
   height: auto;
 }
 
+/* تعديل الزر */
 .back-button {
   position: absolute;
-  top: -40px;
+  top: 10px;
   left: 10px;
   color: black;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px 15px;
+  /* background-color: white; */
+ /*  border: 1px solid #ddd;
+  border-radius: 8px; */
+  padding: 12px 20px; /* زيادة المساحة الداخلية للزر */
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 16px; /* زيادة حجم الخط */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
-  font-size: 16px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .back-button i {
-  margin-right: 8px;
+  margin-right: 10px; /* زيادة المسافة بين الأيقونة والنص */
 }
+
+.back-button a i {
+  text-decoration: none; /* إزالة التسطير من الروابط */
+  color: inherit; /* وراثة اللون من الزر */
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* محاذاة الأيقونة والنص عموديًا */
+}
+
 
 /* Media Queries for Responsive Design */
 

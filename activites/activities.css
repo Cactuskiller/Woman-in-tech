@@ -79,7 +79,6 @@ body {
 }
 .login:hover button {
   background-color: #d730f1c5;
-  transition: 0.5s;
 }
 .login button a {
   color: var(--mainBlack);
@@ -87,10 +86,13 @@ body {
 .cards-list {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
+  padding-top: 50px;
+  margin-top: 30px;
 }
-
 .card {
   margin: 100px auto;
   margin-right: 100px;
@@ -136,7 +138,6 @@ button {
 button:hover {
   background-color: #e3b3f3;
   color: black;
-  transform: scale(0.9, 0.9);
 }
 @media only screen and (max-width: 1200px) {
   .container {
@@ -156,10 +157,6 @@ button:hover {
   }
   .main .menu ul {
     gap: 30px;
-  }
-
-  .cards-list {
-    margin-top: 40px;
   }
   .card {
     margin-right: 50px;
@@ -313,3 +310,88 @@ button:hover {
     height: auto;
   }
 }
+
+/* صندوق كامل */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* إعدادات الصفحة */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* إعدادات صندوق المحتوى */
+.box-section {
+  flex: 1; /* يسمح للـ Box section بالتمدد لتوسيع المحتوى */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* يسمح بتنسيق الأعمدة */
+  gap: 20px; /* المسافة بين البوكسات */
+  padding: 20px;
+}
+
+.box {
+  width: 280px; /* عرض جديد */
+  height: 360px; /* ارتفاع جديد */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* لضمان احتواء المحتوى بشكل عمودي */
+}
+
+.box-image {
+  width: 100%;
+  height: 180px; /* ارتفاع جديد */
+  object-fit: cover; /* يجعل الصورة تغطي الحيز المخصص لها */
+}
+
+.box-content {
+  padding: 15px;
+  flex-grow: 1; /* يضمن أن المحتوى يأخذ كل المساحة المتبقية */
+}
+
+.box-title {
+  font-size: 1.4em; /* حجم خط جديد */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.box-text {
+  font-size: 0.9em; /* حجم خط جديد */
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.box-button {
+  display: inline-block;
+  padding: 10px 15px; /* حشو الزر */
+  background-color: #d772f9;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  /* transition: background-color 0.3s; */
+}
+
+.box-button:hover {
+  background-color: #c73af6; /* لون الزر عند التمرير */
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .box-section {
+    padding: 40px 20px;
+  }
+}
+

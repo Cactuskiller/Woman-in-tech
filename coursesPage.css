@@ -21,12 +21,11 @@ body {
   /* padding-right: 30px; */
   overflow-x: hidden;
 }
-
-/*mantor nav-bar style*/
 .container {
-  max-width: 900px;
+  max-width: 60%;
   margin: 0 auto;
-}
+} 
+
 .Nav_Bar {
   border: 1px solid edbfff;
   height: 60px;
@@ -178,6 +177,10 @@ body {
   background-color: #f0f0f0;
   color: var(--mainPurple);
   transition: 0.5s;
+}
+
+.active {
+  background-color: #edbbff;
 }
 
 /*trying another ocde for the sections */
@@ -749,11 +752,12 @@ h2 {
 .notification-container {
   background-color: white;
   width: 100%;
-  max-width: 700px;
+  height: 550px;
+  max-width: 900px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 70px auto;
+  padding: 40px 20px;
+  margin: 80px auto;
 }
 
 .header {
@@ -800,7 +804,7 @@ h2 {
   background-color: #faf7fc;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 15px;
+  padding: 30px;
   margin-top: 15px;
 }
 
@@ -843,9 +847,11 @@ h2 {
 }
 
 .time {
+  padding:auto 20px;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:right;
   align-items: flex-end;
 }
 
@@ -855,6 +861,10 @@ h2 {
 }
 
 .new-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
   width: 15px;
   height: 15px;
   background-color: #007bff;

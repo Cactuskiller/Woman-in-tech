@@ -69,7 +69,7 @@ body {
   flex: 1;
   padding: 10px;
   cursor: pointer;
-  background-color: #d7c1f3;
+  background-color: #ffffff8f;
   border: none;
   font-weight: bold;
   color: #333;
@@ -81,7 +81,7 @@ body {
 }
 
 .tabactive {
-  background-color: #b585e7;
+  background-color: #d772f993;
   flex: 1;
   padding: 10px;
   cursor: pointer;
@@ -177,7 +177,7 @@ body {
 .login-btn {
   width: 100%;
   padding: 10px;
-  background-color: #b585e7;
+  background-color: #D772F9;
   border: none;
   color: white;
   font-size: 16px;
@@ -191,5 +191,5 @@ body {
 }
 
 .login-btn:hover {
-  background-color: #9c5fd1;
+  background-color: #ce4ff9;
 }
