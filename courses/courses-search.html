@@ -14,32 +14,21 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="coursesPage.css" />
+    <link rel="stylesheet" href="../navBar/navbar.css">
   </head>
   <body>
     <header>
-      <!-- Nav Bar -->
-      <section class="Nav_Bar">
-        <div class="main container">
-          <div class="logo">
-            <img src="assets/images/zain-logo2.png" alt="Logo" />
-          </div>
-          <div class="menu">
-            <ul>
-              <li><a href="second-half/Home.html">Home</a></li>
-              <li><a href="mylearning/mylearning.html">My learning</a></li>
-              <li><a href="Courses.html">Courses</a></li>
-              <li><a href="activites/activities.html">Activities</a></li>
-            </ul>
-          </div>
-          <div class="login">
-            <button><a href="second-half/profile.html">Profile</a></button>
-          </div>
-        </div>
-      </section>
-    </header>
+      <div id="navBar"></div>
 
-    <!--main dev that containes the video and the sections part-->
-
+      <script>
+        fetch('../navBar/navBar.html')
+        .then(data => data.text())
+        .then(data => {
+          document.getElementById('navBar').innerHTML = data
+        })
+      </script>
+         </header>
+   
     <section class="main-container">
       <!--div that has the vidoe-->
       <div class="video-container">
@@ -48,9 +37,9 @@
         <video
           controls
           class="course-video"
-          poster="assets/images/WIT_Banner1.jpg"
+          poster="../assets/images/WIT_Banner1.jpg"
         >
-          <source src="assets/Videos/IMG_0255.MP4" type="video/mp4" />
+          <source src="../assets/Videos/IMG_0255.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -75,7 +64,7 @@
           <section>
             <div class="my-input-container">
               <input placeholder="Search course content" type="text" />
-              <img src="assets/images/search2.png" alt="google-search-icon" />
+              <img src="../assets/images/search2.png" alt="google-search-icon" />
             </div>
             <div class="search-content">
               <h3>Start a new reserch</h3>
@@ -344,7 +333,7 @@
         <br /><br /><br />
         <div class="actions">
           <button class="quiz-button"><a href="quizPage.html">Quiz</a></button>
-          <button class="homework-button"><a href="Co_homewrok/re-homework.html">Homework</a></button>
+          <button class="homework-button"><a href="../Co_homewrok/re-homework.html">Homework</a></button>
         </div>
       </div>
     </section>
