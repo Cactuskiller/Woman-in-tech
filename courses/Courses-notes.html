@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WomanInTech-Courses-Review</title>
+    <title>WomanInTech-Courses-notes</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -14,42 +14,40 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="coursesPage.css" />
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../navBar/navbar.css">
   </head>
   <body>
     <header>
-      <section class="Nav_Bar">
-        <div class="main container">
-          <div class="logo">
-            <img src="assets/images/zain-logo2.png" alt="Logo" />
-          </div>
-          <div class="menu">
-            <ul>
-              <li><a href="second-half/Home.html">Home</a></li>
-              <li><a href="mylearning/mylearning.html">My learning</a></li>
-              <li><a href="Courses.html">Courses</a></li>
-              <li><a href="activites/activities.html">Activities</a></li>
-            </ul>
-          </div>
-          <div class="login">
-            <button><a href="second-half/profile.html">Profile</a></button>
-          </div>
-        </div>
-      </section>
+      <!-- Nav Bar -->
+      <div id="navBar"></div>
+
+      <script>
+        fetch('../navBar/navBar.html')
+        .then(data => data.text())
+        .then(data => {
+          document.getElementById('navBar').innerHTML = data
+        })
+      </script>
     </header>
 
+    <!--main dev that containes the video and the sections part-->
+
     <section class="main-container">
+      <!--div that has the vidoe-->
       <div class="video-container">
         <h1>UI/UX Design</h1>
         <br />
         <video
           controls
           class="course-video"
-          poster="assets/images/WIT_Banner1.jpg"
+          poster="../assets/images/WIT_Banner1.jpg"
         >
-          <source src="assets/Videos/IMG_0255.MP4" type="video/mp4" />
+          <source src="../assets/Videos/IMG_0255.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
+        <!--course information-->
         <div class="course-outline">
           <ul>
             <li>
@@ -59,120 +57,60 @@
             </li>
             <li><a href="Courses.html">Overview</a></li>
             <li><a href="Courses-resourses.html">Resourses</a></li>
-            <li><a href="Courses-notes.html">Notes</a></li>
-            <li><a class="active" href="courses-review.html">Review</a></li>
+            <li><a class="active" href="Courses-notes.html">Notes</a></li>
+            <li><a href="courses-review.html">Review</a></li>
           </ul>
         </div>
 
         <hr />
+        <br /><br /><br />
+        <div class="note-container">
+          <input
+            type="text"
+            class="note-input"
+            placeholder="Create a new note at 0:00"
+          />
 
-        <div class="comments-section">
-          <h2>Comments:</h2>
-
-          <div class="rating-overview">
-            <div class="rating-number">
-              <span class="rating-value">4.7</span>
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-              <span class="rating-count">based on 11,530 ratings</span>
+          <div class="controls">
+            <div class="dropdown">
+              <button class="dropbtn">All lectures</button>
+              <div class="dropdown-content">
+                <a href="#">Lecture 1</a>
+                <a href="#">Lecture 2</a>
+                <a href="#">Lecture 3</a>
+                <a href="#">Lecture 4</a>
+                <a href="#">Lecture 5</a>
+                <a href="#">Lecture 6</a>
+                <a href="#">Lecture 7</a>
+                <a href="#">Lecture 8</a>
+                <a href="#">Lecture 9</a>
+                <a href="#">Lecture 10</a>
+                <a href="#">Lecture 11</a>
+                <a href="#">Lecture 12</a>
+                <a href="#">Lecture 13</a>
+                <a href="#">Lecture 14</a>
+                <a href="#">Lecture 15</a>
+                <a href="#">Lecture 16</a>
+                <a href="#">Lecture 17</a>
+                <a href="#">Lecture 18</a>
+                <a href="#">Lecture 19</a>
+                <a href="#">Lecture 20</a>
+              </div>
             </div>
 
-            <div class="rating-bars">
-              <div class="rating-bar">
-                <span class="stars">5 <i class="fas fa-star"></i></span>
-
-                <div class="bar">
-                  <div class="filled" style="width: 90%"></div>
-                </div>
-                <span class="percentage">90%</span>
-              </div>
-              <div class="rating-bar">
-                <span class="stars">4 <i class="fas fa-star"></i></span>
-                <div class="bar">
-                  <div class="filled" style="width: 5%"></div>
-                </div>
-                <span class="percentage">5%</span>
-              </div>
-              <div class="rating-bar">
-                <span class="stars">3 <i class="fas fa-star"></i></span>
-                <div class="bar">
-                  <div class="filled" style="width: 2%"></div>
-                </div>
-                <span class="percentage">2%</span>
-              </div>
-              <div class="rating-bar">
-                <span class="stars">2 <i class="fas fa-star"></i></span>
-                <div class="bar">
-                  <div class="filled" style="width: 2%"></div>
-                </div>
-                <span class="percentage">2%</span>
-              </div>
-              <div class="rating-bar">
-                <span class="stars">1 <i class="fas fa-star"></i></span>
-                <div class="bar">
-                  <div class="filled" style="width: 1%"></div>
-                </div>
-                <span class="percentage">1%</span>
+            <div class="dropdown">
+              <button class="dropbtn">Sort by most recent</button>
+              <div class="dropdown-content">
+                <a href="#">Oldest first</a>
+                <a href="#">Newest first</a>
               </div>
             </div>
-          </div>
-
-          <div class="comment">
-            <div class="user-info">
-              <img src="assets/images/user-avatar.png" alt="User Avatar" />
-              <div class="user-details">
-                <h4>Lina Al-Farsi</h4>
-                <span class="comment-date">April 03, 2024</span>
-              </div>
-            </div>
-            <p>
-              I loved how this course broke down UI/UX design in a way that's
-              super easy to understand. Plus, the Figma tutorials were
-              awesome—really helped me feel comfortable with the tool!
-            </p>
-            <a href="#" class="reply-link">Reply</a>
-          </div>
-
-          <div class="comment">
-            <div class="user-info">
-              <img src="assets/images/user-avatar.png" alt="User Avatar" />
-              <div class="user-details">
-                <h4>Noor Khalid</h4>
-                <span class="comment-date">june 03, 2023</span>
-              </div>
-            </div>
-            <p>
-              The course does a great job of mixing theory with hands-on
-              practice. I really enjoyed working with Figma, and I feel like
-              I’ve learned a ton without feeling overwhelmed.
-            </p>
-            <a href="#" class="reply-link">Reply</a>
-          </div>
-
-          <div class="comment">
-            <div class="user-info">
-              <img src="assets/images/user-avatar.png" alt="User Avatar" />
-              <div class="user-details">
-                <h4>Amira Zayed</h4>
-                <span class="comment-date"> September 12, 2024</span>
-              </div>
-            </div>
-            <p>
-              The way Figma was taught in this course was so fun! I went from
-              being a total beginner to creating wireframes and prototypes in no
-              time. The lessons are super clear and easy to follow.
-            </p>
-            <a href="#" class="reply-link">Reply</a>
           </div>
         </div>
+        <br /><br />
         <hr />
       </div>
-
+      <!--div that has the course section-->
       <div class="course-progress">
         <br /><br />
         <h3 id="progress-text">
@@ -289,9 +227,7 @@
                     <label class="time-icon" for="time"
                       ><i class="fa-regular fa-clock"></i>12min</label
                     >
-                    100px !important;
                   </li>
-
                   <li>
                     <input class="progress-checkbox" type="checkbox" />
                     <label for=""
@@ -432,12 +368,10 @@
         <br /><br /><br />
         <div class="actions">
           <button class="quiz-button"><a href="quizPage.html">Quiz</a></button>
-          <button class="homework-button"><a href="Co_homewrok/re-homework.html">Homework</a></button>
+          <button class="homework-button"><a href="../Co_homewrok/re-homework.html">Homework</a></button>
         </div>
       </div>
     </section>
-    
-   
     <script src="courses.js"></script>
   </body>
 </html>

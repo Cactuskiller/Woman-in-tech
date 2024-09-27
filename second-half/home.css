@@ -17,84 +17,10 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: auto;
 }
 
 /* Nav Bar  */
-.Nav_Bar {
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: white;
-  transition: top 0.3s; /* إضافة تأثير الانتقال عند تغيير موضع الـ nav */
-  transition: background-color 0.3s linear, color 0.3s ease;
-}
-
-.Nav_Bar:hover {
-  top: 0;
-}
-.Nav_Bar.hidden {
-  top: -100px;
-}
-
-.Nav_Bar.scrolled {
-  background-color: #d730f13f; /* اللون الجديد عند الصفحة الثانية */
-  color: #000;
-}
-.Nav_Bar.scrolled .menu ul li a {
-  color: black;
-}
-
-/* عند التمرير وتغيير الخلفية، اجعل لون الأزرار أيضًا يتغير */
-.Nav_Bar.scrolled .profile button a {
-  color: black; /* لون النص للأزرار */
-}
-
-.Nav_Bar .main .menu ul li a:hover {
-  text-decoration: underline;
-}
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0px;
-  margin-bottom: var(--mainMargin);
-}
-.main .logo {
-  display: flex;
-  align-items: center;
-}
-.main .logo img {
-  width: 110px;
-}
-.main .menu ul {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-.main .menu ul li a {
-  color: var(--mainwhite);
-}
-.profile button a {
-  color: white;
-}
-.profile button {
-  background-color: #d730f196;
-  padding: 7px 20px;
-  border-radius: 20px;
-  border: none;
-  color: var(--mainwhite);
-}
-.profile:hover button {
-  background-color: #d730f1c5;
-}
 
 /* home1 */
 .image-main .content {
@@ -169,12 +95,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 .image-main .wlogo {
   display: flex;
   height: 400;
@@ -213,12 +133,7 @@ body {
 }
 
 /* home2 */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
-}
+
 .about-us {
   width: 100%;
   display: flex;
@@ -284,21 +199,10 @@ body {
   height: auto;
   border-radius: 10px;
 }
-/* @media (max-width:600px){
-  .about-image img {
-    width: 30px;
-    height: auto;
-    border-radius: 10px;
-  }
-} */
+
 
 /* home3 */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-right: 50px;
-}
+
 .learning-section {
   text-align: center;
   width: 100%;
@@ -648,62 +552,5 @@ h3 {
   text-align: right;
 }
 
-/* footer */
-.footer {
-  background-color: #EDBFFF;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  padding: 50px 10px;
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  gap: 40px;
-}
-.logo-section {
-  flex: 1;
-}
-.logo {
-  width: 150px;
-}
-.footer-column {
-  flex: 1;
-}
-.footer-column h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.footer-column ul {
-  list-style: none;
-}
-.footer-column ul li {
-  margin-bottom: 10px;
-}
-.footer-column ul li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 14px;
-}
-.footer-column ul li a:hover {
-  text-decoration: underline;
-}
-.follow-us .social-media {
-  display: flex;
-  gap: 10px;
-}
-.follow-us .social-media li {
-  display: inline-block;
-}
-.follow-us .social-media li a {
-  font-size: 20px;
-  color: #000;
-}
-.follow-us .social-media li a:hover {
-  color: #5e35b1; /* لون عند تمرير الماوس فوق الأيقونة */
-}
+
 

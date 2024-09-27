@@ -60,52 +60,79 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// جلب الـ navbar
-var navbar = document.querySelector(".Nav_Bar");
-var prevScrollpos = window.pageYOffset;
+ const navBar = document.querySelectorAll('.menu ul li a');
+  const mainImage = document.querySelector('.image-main');
 
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  const getImagePosition = () => {
+    const imageRect = mainImage.getBoundingClientRect();
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    return imageRect.bottom + scrollTop;
+  };
 
-  // إذا تم التمرير لأسفل، يتم إخفاء الـ navbar، وإذا تم التمرير لأعلى يظهر
-  if (prevScrollpos > currentScrollPos) {
-    navbar.classList.remove("hidden"); // إظهار الـ Nav_Bar
-  } else {
-    navbar.classList.add("hidden"); // إخفاء الـ Nav_Bar
-  }
-  prevScrollpos = currentScrollPos;
-};
-
-// إظهار الـ Nav_Bar عند وضع المؤشر عليه
-navbar.addEventListener("mouseenter", function () {
-  navbar.classList.remove("hidden");
-});
-
-// إخفاء الـ Nav_Bar عند إزالة المؤشر
-navbar.addEventListener("mouseleave", function () {
-  if (window.pageYOffset > 0) {
-    // فقط إذا تم التمرير
-    navbar.classList.add("hidden");
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // جلب الـ Nav_Bar
-  var navbar = document.getElementById("Nav_Bar");
-
-  // جلب القسم الثاني أو الصفحة الثانية
-  var secondSection = document.getElementById("second-section");
-
-  // التحقق من التمرير وتغيير لون الـ navbar عند الوصول للقسم الثاني
-  window.addEventListener("scroll", function () {
-    var secondSectionOffsetTop = secondSection.offsetTop;
-    var scrollPosition = window.pageYOffset;
-
-    // إذا كان المستخدم قد وصل أو تجاوز القسم الثاني
-    if (scrollPosition >= secondSectionOffsetTop - 200) {
-      navbar.classList.add("scrolled"); // تغيير اللون
-    } else {
-      navbar.classList.remove("scrolled"); // إعادة اللون الأصلي
-    }
+  navBar.forEach(el => {
+    el.classList.add('white');
   });
-});
+  window.onscroll = () => {
+    const scroll = window.scrollY || document.documentElement.scrollTop;
+    const imageEndPosition = getImagePosition();
+    
+    navBar.forEach(el => {
+      if (scroll >= imageEndPosition) {
+        el.classList.add('black'); 
+        el.classList.remove('white'); 
+      } else {
+        el.classList.add('white');
+        el.classList.remove('black'); 
+      }
+    });
+  };
+
+// جلب الـ navbar
+// var navbar = document.querySelector(".Nav_Bar");
+// var prevScrollpos = window.pageYOffset;
+
+// window.onscroll = function () {
+//   var currentScrollPos = window.pageYOffset;
+
+//   // إذا تم التمرير لأسفل، يتم إخفاء الـ navbar، وإذا تم التمرير لأعلى يظهر
+//   if (prevScrollpos > currentScrollPos) {
+//     navbar.classList.remove("hidden"); // إظهار الـ Nav_Bar
+//   } else {
+//     navbar.classList.add("hidden"); // إخفاء الـ Nav_Bar
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
+
+// // إظهار الـ Nav_Bar عند وضع المؤشر عليه
+// navbar.addEventListener("mouseenter", function () {
+//   navbar.classList.remove("hidden");
+// });
+
+// // إخفاء الـ Nav_Bar عند إزالة المؤشر
+// navbar.addEventListener("mouseleave", function () {
+//   if (window.pageYOffset > 0) {
+//     // فقط إذا تم التمرير
+//     navbar.classList.add("hidden");
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   // جلب الـ Nav_Bar
+//   var navbar = document.getElementById("Nav_Bar");
+
+//   // جلب القسم الثاني أو الصفحة الثانية
+//   var secondSection = document.getElementById("second-section");
+
+//   // التحقق من التمرير وتغيير لون الـ navbar عند الوصول للقسم الثاني
+//   window.addEventListener("scroll", function () {
+//     var secondSectionOffsetTop = secondSection.offsetTop;
+//     var scrollPosition = window.pageYOffset;
+
+//     // إذا كان المستخدم قد وصل أو تجاوز القسم الثاني
+//     if (scrollPosition >= secondSectionOffsetTop - 200) {
+//       navbar.classList.add("scrolled"); // تغيير اللون
+//     } else {
+//       navbar.classList.remove("scrolled"); // إعادة اللون الأصلي
+//     }
+//   });
+// });

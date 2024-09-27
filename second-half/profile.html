@@ -7,31 +7,23 @@
     <title>Profile</title>
     <link rel="icon" href="https://www.iq.zain.com/themes/responsiv-clean/assets/images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../navBar/navbar.css">
 </head>
 
 <body>
     <!-- Nav Bar -->
-    <section class="Nav_Bar">
-        <div class="main container">
-            <div class="logo">
-                <img src="./image/zain-logo.png" alt="Logo" />
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="./Home.html">Home</a></li>
-                    <li><a href="../mylearning/mylearning.html">My learning</a></li>
-                    <li><a href="../Courses.html">Courses</a></li>
-                    <li><a href="../activites/activities.html">Activities</a></li>
-                </ul>
-            </div>
-            <div class="login">
-                <button><a href="./profile.html">   Profile</a></button>
-            </div>
-        </div>
-    </section>
+    <div id="navBar"></div>
 
+    <script>
+      fetch('../navBar/navBar.html')
+      .then(data => data.text())
+      .then(data => {
+        document.getElementById('navBar').innerHTML = data
+      })
+    </script>
     <!-- Profile Section -->
-    <div class="profile">
+    <div class="profiles">
         <div class="slider">
         </div>
 

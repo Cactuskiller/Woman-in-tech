@@ -1,0 +1,92 @@
+:root {
+  --mainBlack: black;
+  --mainbink: #d630f1;
+  --mainwhite: white;
+  --mainMargin: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Nav_Bar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: rgba(237, 191, 255, 0.254); 
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: top 0.3s; 
+  transition: background-color 0.3s linear, color 0.3s ease;
+  backdrop-filter: blur(4px); 
+  -webkit-backdrop-filter: blur(4px); 
+}
+
+.Nav_Bar:hover {
+  top: 0;
+}
+.Nav_Bar.hidden {
+  top: -100px;
+}
+
+.Nav_Bar.scrolled {
+  background-color: #d730f13f; /* اللون الجديد عند الصفحة الثانية */
+  color: #000;
+}
+
+.menu ul li a.white{
+  color: white;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+/* عند التمرير وتغيير الخلفية، اجعل لون الأزرار أيضًا يتغير */
+.Nav_Bar.scrolled .profile button a {
+  color: black; /* لون النص للأزرار */
+}
+
+.Nav_Bar .main .menu ul li a:hover {
+  text-decoration: underline;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-bottom: var(--mainMargin);
+}
+.main .logo {
+  display: flex;
+  align-items: center;
+}
+.main .logo img {
+  width: 110px;
+}
+.main .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.profile button a {
+  color: white;
+}
+.profile button {
+  background-color: #d730f196;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: none;
+  color: var(--mainwhite);
+}
+.profile button:hover  {
+  background-color: #d730f1c5;
+}

@@ -13,46 +13,10 @@
   list-style-type: none;
 }
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
 }
-body {
-  background-color: #f6f6f6;
-}
-.Nav_Bar {
-  border: 1px solid edbfff;
-  height: 60px;
-  width: 100%;
-  background-color: #e795ef7c;
-  position: absolute;
-  top: 0;
-  background-color: #edbfff95;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0px;
-}
-.main .logo {
-  display: flex;
-  align-items: center;
-}
-.main .logo img {
-  width: 110px;
-}
-.main .menu ul {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-.main .menu ul li a {
-  color: var(--mainBlack);
-}
-
-.login button {
+/* .login button {
   background-color: #d730f196;
   color: white;
   padding: 7px 20px;
@@ -64,10 +28,10 @@ body {
 .login:hover button {
   background-color: #d730f1c5;
   transition: 0.5s;
-}
+} */
 
-.profile {
-  margin: 70px;
+.profiles {
+  margin-top: 100px;
   background-color: #ffffff;
 }
 .profile .slider {
