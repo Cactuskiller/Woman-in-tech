@@ -1,5 +1,8 @@
 {
   "routes": [
-    { "src": "/login", "dest": "/second-half/login.html" }
+    {
+      "src": "/",
+      "dest": "/Woman-in-tech/second-half/login.html"
+    }
   ]
 }
